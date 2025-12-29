@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kyoto & Osaka Trip 25-26</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-main">
+            <p>2025-2026 Memorial Trip</p>
+            <h1>Kyoto & Osaka</h1>
+        </div>
+        <nav id="mainNav">
+            <button class="nav-item active" data-target="schedule"><i class="fas fa-route"></i><span>予定</span></button>
+            <button class="nav-item" data-target="packing"><i class="fas fa-suitcase"></i><span>持ち物</span></button>
+            <button class="nav-item" data-target="map"><i class="fas fa-map-marked-alt"></i><span>マップ</span></button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="schedule" class="tab-section active">
+            <div class="day-scroller">
+                <button class="day-btn active" data-day="d1">12/30</button>
+                <button class="day-btn" data-day="d2">12/31</button>
+                <button class="day-btn" data-day="d3">1/1</button>
+                <button class="day-btn" data-day="d4">1/2</button>
+            </div>
+
+            <div id="d1" class="day-content">
+                <div class="card">
+                    <div class="card-time">10:00</div>
+                    <div class="card-info">
+                        <h4>優希の家 出発</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-time">10:30</div>
+                    <div class="card-info">
+                        <h4>香織ちゃんの家 到着</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-time">11:15</div>
+                    <div class="card-info">
+                        <h4>佐賀駅 到着</h4>
+                        <p>荷物預け・車移動</p>
+                    </div>
+                </div>
+                <div class="card type-train">
+                    <div class="card-time">12:15</div>
+                    <div class="card-info">
+                        <h4>特急かささぎ号</h4>
+                        <p>佐賀 → 博多(12:52着)</p>
+                    </div>
+                </div>
+                <div class="card type-food">
+                    <div class="card-time">13:00</div>
+                    <div class="card-info">
+                        <h4>博多駅 買い物</h4>
+                        <p>昼食・チケット購入</p>
+                    </div>
+                </div>
+                <div class="card type-train">
+                    <div class="card-time">13:36</div>
+                    <div class="card-info">
+                        <h4>のぞみ34号</h4>
+                        <p>博多 → 京都(16:19着)</p>
+                    </div>
+                </div>
+                <div class="card type-hotel">
+                    <div class="card-time">17:00</div>
+                    <div class="card-info">
+                        <h4>変なホテルプレミア京都</h4>
+                        <p>五条駅下車・チェックイン</p>
+                    </div>
+                </div>
+                <div class="card type-event">
+                    <div class="card-time">18:30</div>
+                    <div class="card-info">
+                        <h4>リング作り体験</h4>
+                        <p>glänta kyoto(〜19:30)</p>
+                    </div>
+                </div>
+                <div class="card type-food">
+                    <div class="card-time">20:00</div>
+                    <div class="card-info">
+                        <h4>夕食：をにわ</h4>
+                        <p>京都河原町店</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="d2" class="day-content" style="display:none;">
+                <div class="card">
+                    <div class="card-time">10:30</div>
+                    <div class="card-info">
+                        <h4>京都駅 観光</h4>
+                    </div>
+                </div>
+                <div class="card type-train">
+                    <div class="card-time">12:15</div>
+                    <div class="card-info">
+                        <h4>JR新快速</h4>
+                        <p>京都 → 新大阪</p>
+                    </div>
+                </div>
+                <div class="card type-event">
+                    <div class="card-time">14:30</div>
+                    <div class="card-info">
+                        <h4>海遊館</h4>
+                        <p>大阪港駅から徒歩9分</p>
+                    </div>
+                </div>
+                <div class="card type-event">
+                    <div class="card-time">18:00</div>
+                    <div class="card-info">
+                        <h4>京都タワー 夜景</h4>
+                    </div>
+                </div>
+                <div class="card type-food">
+                    <div class="card-time">19:30</div>
+                    <div class="card-info">
+                        <h4>ディナー：le un</h4>
+                        <p>鮒鶴京都鴨川リゾート</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="d3" class="day-content" style="display:none;">
+                <div class="card type-event">
+                    <div class="card-time">09:00</div>
+                    <div class="card-info">
+                        <h4>清水寺 初詣</h4>
+                        <p>〜13:30 散策</p>
+                    </div>
+                </div>
+                <div class="card type-event">
+                    <div class="card-time">15:00</div>
+                    <div class="card-info">
+                        <h4>USJ</h4>
+                        <p>〜21:00 パーク満喫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="d4" class="day-content" style="display:none;">
+                <div class="card type-hotel">
+                    <div class="card-time">10:30</div>
+                    <div class="card-info">
+                        <h4>チェックアウト</h4>
+                    </div>
+                </div>
+                <div class="card type-event">
+                    <div class="card-time">11:30</div>
+                    <div class="card-info">
+                        <h4>大阪駅 散策</h4>
+                        <p>お土産購入・荷物預け</p>
+                    </div>
+                </div>
+                <div class="card type-train">
+                    <div class="card-time">16:30</div>
+                    <div class="card-info">
+                        <h4>新大阪駅発</h4>
+                        <p>新幹線で博多へ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="packing" class="tab-section">
+            <div class="packing-container">
+                <div class="packing-category">
+                    <h3><i class="fas fa-exclamation-circle"></i> 必須アイテム</h3>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>新幹線チケット</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>USJ スタジオ・パス</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>財布・現金</span></label>
+                </div>
+                <div class="packing-category">
+                    <h3><i class="fas fa-tshirt"></i> 衣服・身だしなみ</h3>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>着替え(4日分)</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>洗顔・メイク道具</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>ヘアアイロン</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>折りたたみ傘</span></label>
+                </div>
+                <div class="packing-category">
+                    <h3><i class="fas fa-plug"></i> デバイス・その他</h3>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>モバイルバッテリー</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>充電ケーブル</span></label>
+                    <label class="check-item"><input type="checkbox" class="save-cb"><span>常備薬（酔い止め等）</span></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="tab-section">
+            <div class="map-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="mapSearch" placeholder="場所名で検索...">
+                </div>
+                <select id="dayFilter">
+                    <option value="all">全日程</option>
+                    <option value="12/30">12/30</option>
+                    <option value="12/31">12/31</option>
+                    <option value="1/1">1/1</option>
+                    <option value="1/2">1/2</option>
+                </select>
+            </div>
+            <div id="mapList">
+                <div class="map-item" data-name="変なホテルプレミア京都 五条烏丸" data-day="12/30">
+                    <h4><i class="fas fa-hotel"></i> 変なホテルプレミア京都 五条烏丸</h4>
+                    <iframe src="https://www.google.com/maps?q=変なホテルプレミア京都+五条烏丸&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="京都駅" data-day="12/30">
+                    <h4><i class="fas fa-train"></i> 京都駅</h4>
+                    <iframe src="https://www.google.com/maps?q=京都駅&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="glänta kyoto 三条河原町店" data-day="12/30">
+                    <h4><i class="fas fa-ring"></i> glänta kyoto 三条河原町店</h4>
+                    <iframe src="https://www.google.com/maps?q=glänta+kyoto+三条河原町店&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="肉ときどき魚 大衆酒場 をにわ 京都河原町店" data-day="12/30">
+                    <h4><i class="fas fa-utensils"></i> をにわ 京都河原町店</h4>
+                    <iframe src="https://www.google.com/maps?q=肉ときどき魚+大衆酒場+をにわ+京都河原町店&output=embed"></iframe>
+                </div>
+
+                <div class="map-item" data-name="海遊館" data-day="12/31">
+                    <h4><i class="fas fa-fish"></i> 海遊館</h4>
+                    <iframe src="https://www.google.com/maps?q=海遊館&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="新大阪駅" data-day="12/31">
+                    <h4><i class="fas fa-train"></i> 新大阪駅</h4>
+                    <iframe src="https://www.google.com/maps?q=新大阪駅&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="京都タワー" data-day="12/31">
+                    <h4><i class="fas fa-monument"></i> 京都タワー</h4>
+                    <iframe src="https://www.google.com/maps?q=京都タワー&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="le un 鮒鶴京都鴨川リゾート" data-day="12/31">
+                    <h4><i class="fas fa-glass-cheers"></i> le un 鮒鶴京都鴨川リゾート</h4>
+                    <iframe src="https://www.google.com/maps?q=LE+UN+鮒鶴京都鴨川リゾート&output=embed"></iframe>
+                </div>
+
+                <div class="map-item" data-name="清水寺" data-day="1/1">
+                    <h4><i class="fas fa-torii-gate"></i> 清水寺</h4>
+                    <iframe src="https://www.google.com/maps?q=清水寺&output=embed"></iframe>
+                </div>
+                <div class="map-item" data-name="ユニバーサルスタジオジャパン USJ" data-day="1/1">
+                    <h4><i class="fas fa-star"></i> ユニバーサル・スタジオ・ジャパン</h4>
+                    <iframe src="https://www.google.com/maps?q=ユニバーサル・スタジオ・ジャパン&output=embed"></iframe>
+                </div>
+
+                <div class="map-item" data-name="大阪駅" data-day="1/2">
+                    <h4><i class="fas fa-building"></i> 大阪駅</h4>
+                    <iframe src="https://www.google.com/maps?q=大阪駅&output=embed"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

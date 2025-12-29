@@ -1,0 +1,191 @@
+:root {
+    --primary: #0f172a;
+    --accent: #f59e0b;
+    --bg: #1e293b;
+    --card: #334155;
+    --text: #f8fafc;
+    --sub-text: #94a3b8;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary);
+    padding: 30px 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.header-main h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--accent);
+}
+
+nav {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-item {
+    flex: 1;
+    padding: 15px 0;
+    border: none;
+    background: none;
+    color: var(--sub-text);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-item.active {
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent);
+}
+
+main {
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.tab-section {
+    display: none;
+}
+
+.tab-section.active {
+    display: block;
+}
+
+/* 日付ボタン */
+.day-scroller {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.day-btn {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--sub-text);
+    background: none;
+    color: white;
+}
+
+.day-btn.active {
+    background: var(--accent);
+    color: var(--primary);
+    border-color: var(--accent);
+}
+
+/* スケジュールカード */
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    border-left: 5px solid #64748b;
+}
+
+.card-time {
+    font-weight: bold;
+    color: var(--accent);
+    min-width: 50px;
+}
+
+.type-train {
+    border-left-color: #3b82f6;
+}
+
+.type-event {
+    border-left-color: #f59e0b;
+}
+
+.type-hotel {
+    border-left-color: #a855f7;
+}
+
+/* 持ち物リスト */
+.packing-category {
+    background: var(--card);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.packing-category h3 {
+    color: var(--accent);
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+}
+
+.check-item input:checked+span {
+    color: var(--sub-text);
+    text-decoration: line-through;
+}
+
+/* マップ */
+.map-controls {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.search-box input {
+    background: none;
+    border: none;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+#dayFilter {
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
